@@ -13,6 +13,17 @@
     padding: 0 2%;
 }
 
+.w50
+{
+    width: 50%;
+    float: left;
+}
+
+.center 
+{
+    text-align: center;
+}
+
 .clear
 {
     clear: both;
@@ -113,6 +124,7 @@ section.main-bg p
     font-size: 17px;
     margin-top: 15px;
     text-align: left;
+    text-align: justify;
 }
 
 /*=============================================================
@@ -140,7 +152,7 @@ section.diferencias
     top:0;
     left: 0;
     height: 3px;
-    width: 100px;
+    width: 50px;
 }
 
 .line-text h2
@@ -174,7 +186,126 @@ section.diferencias
     font-size: 16px;
 }
 
+/*=============================================================
+Section Sobre Equipe
+================================================================*/
+section.sobre-equipe
+{
+    padding: 30px 0;
+    background: rgb(225,225,225);
+}
+
+section.sobre-equipe > .container
+{
+    display:flex;
+}
+
+.equipe-container
+{
+    width:50%;
+}
+
+.sobre-container
+{
+    width:50%;
+}
+
+.sobre-container p
+{
+    color: black;
+    font-size: 15px;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.avatar-box
+{
+    display:flex;
+    margin: 10px 0px 20px 0px;
+}
+
+.img-avatar
+{
+    width: 70px;
+    height: 70px;
+    min-width: 70px;
+    min-height: 70px;
+    border-radius: 50%;
+    margin: 6px 10px 20px 0px;
+    background-size: 100% 100%;
+    background-color: #52aaa7;
+}
+
+.descricao-avatar p
+{
+    color: black;
+    font-size: 15px;
+    margin-right: 30px;
+    text-align: justify;
+}
+
+/*=============================================================
+Section Inscricao
+================================================================*/
+
+section.inscricao
+{
+    background: #52aaa7;
+    padding: 10px 0;
+}
+
+h2.inscricao-text
+{
+    font-weight: normal;
+    color: white;
+}
+
+.inscricao-form input[type=text]
+{
+    width: calc(100% - 120px);
+    height: 40px;
+    background: white;
+    border: 1px solid #ccc;
+    display: inline-block;
+}
+
+.inscricao-form input[type=submit]
+{
+    width: 120px;
+    height: 40px;
+    background: #1d6c64;
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    color: white;
+    font-weight: normal;
+    font-size: 16px;
+    
+    
+}
+
+/*=============================================================
+Mobile
+================================================================*/
 @media screen and (max-width:778px)
 {
-    .box-icone-single { width: 100%; }
+    .box-icone-single{ width: 100%; }
+
+    section.sobre-equipe > .container
+    {
+        display:flex;
+        flex-direction: column;
+    }
+
+    .container > div { margin-bottom: 20px; }
+
+    .sobre-container{ width: 100%; }
+
+    .equipe-container{ width: 100%; }
+
+    .w50
+    { 
+        width: 100%; 
+        margin-bottom: 20px;
+    }
 }
